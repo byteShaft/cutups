@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/button_albuns"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            android:id="@+id/button_cutup"
+            android:src="@drawable/button_cutup"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:baselineAlignBottom="false"
+            android:layout_alignParentTop="true" />
+
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:id="@+id/imageView3"
+            android:src="@drawable/button_trash"
+            android:baselineAlignBottom="false"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:gravity="top"
+            android:id="@+id/cut_ups_save"
+            android:text="save"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="75sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/button_cutup"
+            android:layout_alignEnd="@+id/button_cutup" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/cut_ups_write_entry"
+            android:gravity="top"
+            android:textSize="30sp"
+            android:background="@android:color/white"
+            android:layout_below="@+id/button_cutup"
+            android:layout_above="@+id/cut_ups_save"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+</RelativeLayout>
